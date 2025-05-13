@@ -22,6 +22,10 @@ io.on("connection", (socket) => {
     })
 });
 
+app.get('/', (req, res)=>{
+    res.status(200).json("Hii from backend server")
+})
+
 server.listen(8000, () => {
     console.log("Server running on port 8000");
 });
